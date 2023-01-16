@@ -1,10 +1,16 @@
-function add(num1: number, num2:number){
-    return num1 + num2;
+
+function add(num1: number, num2: number, showResult:boolean, someSpring: string){
+    if(showResult){
+        const result = num1 + num2;
+        console.log(someSpring + result)
+    }else{
+        return num1 + num2;
+    }
+    
 }
 
 const number1 = 5;
 const number2 = 2.8;
-
-const result = add(number1, number2);
-
-console.log(result);
+const printResult = true;
+const someSpring = "result is:"
+add(number1, number2, printResult, someSpring);
