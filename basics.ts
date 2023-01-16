@@ -9,7 +9,8 @@ function add(num1: number, num2: number, showResult:boolean, someSpring: string)
     
 }
 
-const number1 = 5;
+let number1:number;
+number1 = 5;
 const number2 = 2.8;
 const printResult = true;
 const someSpring = "result is:"
