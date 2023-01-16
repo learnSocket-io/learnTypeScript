@@ -1,3 +1,5 @@
+import { publicDecrypt } from "crypto";
+
 const person: {
     name: string;
     age : number;
@@ -14,6 +16,8 @@ const person: {
 let testArr: string[];
 //testArr = "hi"; //string 에러
 testArr = ["hi"];
+
+person.pup.push("isn't error") // tuple type이 순서와 요소의 개수가 정해져 있지만, push는 예외처리된다.
 
 console.log(person.name)
 
