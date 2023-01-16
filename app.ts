@@ -1,10 +1,19 @@
 const person: {
     name: string;
-    age : number
-} = {
+    age : number;
+    hobbies: string[] // 일반적인 배열에 대한 타입지정
+    pup: [number, string] // tuple type 일반적인 배열과 다르게 인덱스의 갯수와, 타입, 타입이 대한 순서가 정의된 배
+}
+ = {
     name : "hoho",
     age : 30,
+    hobbies: ["sports", "game"],
+    pup: [5, "hi typeScript"]
 };
+
+let testArr: string[];
+//testArr = "hi"; //string 에러
+testArr = ["hi"];
 
 console.log(person.name)
 
