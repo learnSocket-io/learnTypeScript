@@ -1,5 +1,9 @@
 import { publicDecrypt } from "crypto";
 
+// enum의 요소는 기본적으로 0번의 인덱스 부터 시작하지만
+// {zero=2, one, two=100, three=200, four=600, five};
+// 이런식으로 설정이 가능하며, 입력하지 않은 one의 경우 앞에 인덱스의 +1 로 작동하는 것 같다.
+// type은 number로 작동한다.
 enum numbers {zero, one, two, three, four, five};
 
 // const person: {
