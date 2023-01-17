@@ -1,5 +1,6 @@
+"use strict";
 function combine(input1, input2) {
-    var result;
+    let result;
     if (typeof input1 === 'number' && typeof input2 === 'number') {
         result = input1 + input2;
     }
@@ -8,7 +9,7 @@ function combine(input1, input2) {
     }
     return result;
 }
-var combineResult = combine(30, 50);
+const combineResult = combine(30, 50);
 console.log(combineResult);
-var combineName = combine("Max", "Is");
+const combineName = combine("Max", "Is");
 console.log(combineName);
