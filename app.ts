@@ -1,16 +1,19 @@
 import { publicDecrypt } from "crypto";
 
-const person: {
-    name: string;
-    age : number;
-    hobbies: string[] // 일반적인 배열에 대한 타입지정
-    pup: [number, string] // tuple type 일반적인 배열과 다르게 인덱스의 갯수와, 타입, 타입이 대한 순서가 정의된 배
-}
- = {
+enum numbers {zero, one, two, three, four, five};
+
+// const person: {
+//     name: string;
+//     age : number;
+//     hobbies: string[] // 일반적인 배열에 대한 타입지정
+//     pup: [number, string] // tuple type 일반적인 배열과 다르게 인덱스의 갯수와, 타입, 타입이 대한 순서가 정의된 배
+// }   
+const person = {
     name : "hoho",
     age : 30,
     hobbies: ["sports", "game"],
-    pup: [5, "hi typeScript"]
+    pup: [5, "hi typeScript"],
+    role: numbers.one,
 };
 
 let testArr: string[];
